@@ -30,7 +30,7 @@ section {
 .card {
     background-color: #fff;
     border-radius: 25px;
-    background-image: url(/images/bg-pattern-mobile.svg);
+    background-image: url(/images/bgmobile.svg);
     background-repeat: no-repeat;
     background-position: center top;
     width: min(90%, 900px);
