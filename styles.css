@@ -1,0 +1,184 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    color: hsl(238, 29%, 16%);
+    box-sizing: border-box;
+
+}
+
+section {
+    background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.container {  
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 25px;
+    background-image: url(/images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: min(90%, 900px);
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    box-shadow: 0px 30px 30px -15px rgba(0, 0, 0, .4);
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    padding: 6px;
+    margin-top: 130px;
+}
+
+.accordion {
+    padding: 10px 20px;
+    margin-top: 0px;
+}
+
+.accordion-item {
+    text-align: left;
+    padding: 0px 5px 15px;
+
+
+    /* Dividers */
+    border-bottom: solid 1.5px hsl(240, 5%, 91%);
+    
+}
+
+.accordion-link {
+    color: hsl(237, 12%, 33%);
+    font-size: 1rem;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.accordion-link .icon-up {
+    display: none;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    color: hsl(240, 6%, 50%);
+    font-size: .93rem;
+    padding: 0px 20px 0px 0px;
+    transition: max-height 400ms;
+}
+
+.accordion-item:target .answer {
+    max-height: 20rem;
+}
+
+.accordion-item:target .accordion-link .icon-down {
+    display: none;
+}
+
+.accordion-item:target .accordion-link .icon-up {
+    display: block;
+}
+
+.accordion-link:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+.accordion-item:target .accordion-link {
+    color: hsl(238, 29%, 16%);
+    font-weight: 700;
+}
+
+@media screen and (max-width: 980px) {
+    img {
+        position: absolute; 
+        left: 0; 
+        right: 1.875rem; 
+        margin-left: auto; 
+        margin-right: auto;
+        top: 3.4rem;
+    }
+
+    .box-image {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 981px){
+    .card {
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: -585px -285px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    img {
+       
+        position:absolute;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        right: 57%;
+        top: 7rem;
+    }
+
+    .box-image {
+        position: fixed;
+        top: 33%;
+        left: 130px;
+        right: 740px;
+    }
+
+    .title {
+        text-align:left;
+        font-size: 3rem;
+        padding: 2rem;
+        margin-top: 4.1rem;
+        margin-left: 37.5rem;
+    }
+
+    .accordion-item {
+        text-align: left;
+        margin-left: 37.5rem;
+        margin-right: 5.8rem;
+        padding: .5rem;
+    }
+
+    .accordion-link {
+        font-size: 1.15rem;
+    }
+
+    .answer {
+        font-size: .95rem;
+
+    }
+
+    
+}
+

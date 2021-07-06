@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+</head>
+<body>
+
+  <section>
+    <div class="container">
+
+      <!-- Image -->
+      <div class="card">
+        <div class="image">
+          <picture class="ima1">
+            <source srcset="images/illustration-woman-online-mobile.svg" media="(max-width: 980px)">
+            <source srcset="images/illustration-woman-online-desktop.svg">
+            <img src="images/illustration-woman-online-desktop.svg" alt="woman">
+          </picture>
+        </div>
+        <div class="box-image">
+          <picture>
+            <source srcset="images/illustration-box-desktop.svg" media="(min-width: 981px)">
+            <img src="images/illustration-box-desktop.svg" alt="box">
+          </picture>
+        </div>
+
+        <!-- Title -->
+        <div>
+          <h1 class="title">FAQ</h1>
+        </div>
+
+        <!-- Accordion -->
+        <div class="accordion">
+
+          <!-- Questions & Answers -->
+          <div class="accordion-item" id="question1">
+            <a class="accordion-link" href="#question1">
+              How many team members can I invite?
+              <svg class="icon icon-down" width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="hsl(14, 88%, 65%)" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+              <svg class="icon icon-up" width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M9,5.5l-4-4l-4,4" stroke="hsl(14, 88%, 65%)" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+            </a>
+            <div class="answer">
+              You can invite up to 2 additional users on the Free plan. There is no limit on 
+              team members for the Premium plan.
+            </div>
+          </div>
+
+          <div class="accordion-item" id="question2">
+            <a class="accordion-link" href="#question2">
+              What is the maximum file upload size?
+              <svg class="icon icon-down" width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="hsl(14, 88%, 65%)" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+              <svg class="icon icon-up" width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M9,5.5l-4-4l-4,4" stroke="hsl(14, 88%, 65%)" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+            </a>
+            <div class="answer">
+              No more than 2GB. All files in your account must fit your allotted storage space.
+            </div>
+          </div>
+
+          <div class="accordion-item" id="question3">
+            <a class="accordion-link" href="#question3">
+              How do I reset my password?
+              <svg class="icon icon-down" width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="hsl(14, 88%, 65%)" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+              <svg class="icon icon-up" width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M9,5.5l-4-4l-4,4" stroke="hsl(14, 88%, 65%)" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+            </a>
+            <div class="answer">
+              Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.
+            </div>
+          </div>
+
+          <div class="accordion-item" id="question4">
+            <a class="accordion-link" href="#question4">
+              Can I cancel my subscription?
+              <svg class="icon icon-down" width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="hsl(14, 88%, 65%)" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+              <svg class="icon icon-up" width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M9,5.5l-4-4l-4,4" stroke="hsl(14, 88%, 65%)" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+            </a>
+            <div class="answer">
+              Yes! Send us a message and we’ll process your request no questions asked.
+            </div>
+          </div>
+
+          <div class="accordion-item" id="question5">
+            <a class="accordion-link" href="#question5">
+              Do you provide additional support?
+              <svg class="icon icon-down" width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="hsl(14, 88%, 65%)" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+              <svg class="icon icon-up" width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M9,5.5l-4-4l-4,4" stroke="hsl(14, 88%, 65%)" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+            </a>
+            <div class="answer">
+              Chat and email support is available 24/7. Phone lines are open during normal business hours.
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+</body>
+</html>
